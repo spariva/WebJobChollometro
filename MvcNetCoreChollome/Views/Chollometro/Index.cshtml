@@ -1,0 +1,13 @@
+﻿@model List<Chollo>
+
+@if(Model != null){
+<h2 class="text-warning">Núm Chollos: @Model.Count</h2>
+
+@foreach (Chollo c in Model){
+    <div>
+        <h3 class="text-primary"><a href="@c.Link"></a>@c.Titulo</h3>
+        <p>@c.Fecha.ToString()</p>
+        <div>@Html.Raw(c.Descripcion)</div>
+    </div>
+}
+}
