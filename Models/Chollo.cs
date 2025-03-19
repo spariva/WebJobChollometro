@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -8,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace WebJobChollometro.Models
 {
+    #region table
+    //create table CHOLLOS(IDCHOLLO int primary key, TITULO nvarchar(max), LINK nvarchar(max), DESCRIPCION nvarchar(max), FECHA datetime)
+    #endregion
     [Table("CHOLLOS")]
     public class Chollo
     {
