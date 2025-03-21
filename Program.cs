@@ -4,7 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using WebJobChollometro.Data;
 using WebJobChollometro.Repositories;
 
-string connectionString = "Data Source=spariva.database.windows.net;Initial Catalog=AZURETAJAMAR;Persist Security Info=True;User ID=maki;Password=Sacresmont13;Encrypt=True;Trust Server Certificate=True";
+string connectionString = "Data Source=spariva.database.windows.net;Initial Catalog=AZURETAJAMAR;Persist Security Info=True;User ID=maki;Password=HotelHazbin27;Encrypt=True;Trust Server Certificate=True";
 
 //dependencias
 var provider = new ServiceCollection().AddTransient<RepositoryChollometro>().
